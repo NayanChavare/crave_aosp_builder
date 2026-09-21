@@ -22,7 +22,7 @@ on:
           - 'ArrowOS 13.1'
           - 'DerpFest 14.0'
           - 'CipherOS 14'
-          - 'PixelOS 15'
+          - 'PixelOS 17'
           - 'RisingOS 15 Revived'
           - 'LineageOS 18.1'
           - 'LineageOS 16.0'
@@ -38,27 +38,27 @@ on:
       LOCAL_MANIFEST:
         description: "Personal local manifest [repository or raw]:"
         required: true
-        default: 'https://github.com/sounddrill31/local_manifests_oxygen'
+        default: 'https://raw.githubusercontent.com/pixelos-asteroids/android_manifest/refs/heads/seventeen/asteroids.xml'
       LOCAL_MANIFEST_BRANCH:
         description: "Personal local manifest's branch:"
         required: false
-        default: 'lineage-21-qpr3'
+        default: 'seventeen'
       DEVICE_NAME:
         description: "Device's codename:"
         required: true
-        default: "oxygen"
+        default: "asteroids"
       PRODUCT_NAME:
         description: "Product to build:"
         required: true
-        default: "oxygen"
+        default: "asteroids"
       BUILD_COMMAND:
         description: 'Command to be used for compiling:'
         required: true
-        default: 'mka bacon'
+        default: 'm pixelos'
       BUILD_TYPE:
         description: 'Type of build:'
         required: true
-        default: 'userdebug'
+        default: 'user'
         type: choice
         options: 
         - 'eng'
@@ -124,10 +124,10 @@ jobs:
           export PROJECTID="79"
           export REPO_INIT="repo init -u https://github.com/CipherOS/android_manifest.git -b fourteen --git-lfs --depth=1"
         ;;
-        "PixelOS 15")
-          export PROJECTFOLDER="/crave-devspaces/Pixel15"
+        "PixelOS 17")
+          export PROJECTFOLDER="/crave-devspaces/Pixel17"
           export PROJECTID="82"
-          export REPO_INIT="repo init -u https://github.com/PixelOS-AOSP/manifest.git -b fifteen --git-lfs --depth=1"
+          export REPO_INIT="repo init -u https://github.com/PixelOS-AOSP/manifest.git -b seventeen --git-lfs --depth=1"
         ;;
         "RisingOS 15 Revived")
           export PROJECTFOLDER="/crave-devspaces/Rising15"
