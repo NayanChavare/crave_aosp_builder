@@ -172,7 +172,7 @@ jobs:
           export PROJECTID="79"
           export REPO_INIT="repo init -u https://github.com/CipherOS/android_manifest.git -b fourteen --git-lfs --depth=1"
         ;;
-        "PixelOS 15")
+        "PixelOS 17")
           export PROJECTFOLDER="/crave-devspaces/Pixel17"
           export PROJECTID="82"
           export REPO_INIT="repo init -u https://github.com/PixelOS-AOSP/manifest.git -b seventeen --git-lfs --depth=1"
